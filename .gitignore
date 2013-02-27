@@ -15,4 +15,9 @@ tmp
 # YARD artifacts
 .yardoc
 _yardoc
+
+#latter added
 doc/
+db/development.sqlite3
+db/test.sqlite3
+log/*

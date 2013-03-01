@@ -23,6 +23,22 @@ end
 
 gem 'jquery-rails'
 
+group :development, :test do
+  gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'libnotify', '0.5.9'
+  gem 'spork', '0.9.2'
+  gem 'guard-spork'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
+  gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

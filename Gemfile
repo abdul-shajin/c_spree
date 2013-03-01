@@ -26,7 +26,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
-  gem 'rb-inotify', '~> 0.8.8'
+  gem 'rb-inotify', '~> 0.9'
   gem 'libnotify', '0.5.9'
   gem 'spork', '0.9.2'
   gem 'guard-spork'

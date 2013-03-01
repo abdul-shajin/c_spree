@@ -1,10 +1,9 @@
 <!-- replace_contents '#taxonomies' -->
 
 <% get_taxonomies.each do |taxonomy| %>
-<%= taxons_children_count(taxonomy.root) %>
-  <% unless taxonomy.name == 'Tags' %>
+<% unless taxonomy.name == 'Tags' %>
     <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %><%= "(#{taxonomy.root.children.count})" %></h6>
-    <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+    <%= taxons_tree_with_count(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
   <% end %>
 <% end %>
 

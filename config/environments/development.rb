@@ -33,5 +33,18 @@ CaveSpree::Application.configure do
   config.assets.compress = false
 
   # Expands the lines which load the assets
-  config.assets.debug = false
+  config.assets.debug = true
+
+  # Add the font path
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  #Precompile additional assets
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+  #Avoid precompiles assets being server in dev mode
+  #config.assets.prefix = "/assets_dev"
+
+  #Avoid serving files from public folder
+  # config.server_static_assets = false
+
 end

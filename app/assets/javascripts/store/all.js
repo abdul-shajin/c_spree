@@ -1,3 +1,4 @@
+// file all js (app)
 // This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
 // be included in the compiled file accessible from http://example.com/assets/application.js
@@ -10,4 +11,6 @@
 //= require store/spree_core
 //= require store/spree_promo
 
+
 //= require_tree .
+// file all js (app) - end
